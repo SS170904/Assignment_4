@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app='MenuApp' ng-strict = true>
+  <head >
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+
+
+  </head>
+<body>
+    <ui-view></ui-view>
+
+
+
+    <script src ="lib\angular.min.js"></script>
+    <script src ="lib\angular-ui-router.min.js"></script>
+
+    <script src ="src\menuSearch.module.js"></script>
+    <script src ="src\data.module.js"></script>
+
+
+    <!-- Routes -->
+    <script src="src\routes.js"></script>
+    <script src ="src\categories.component.js"></script>
+    <script src ="src\items.component.js"></script>
+    <script src ="src\narrowItDown.controller.js"></script>
+    <script src ="src\itemDetail.controller.js"></script>
+
+    <!--    <script src ="src\spinner.controller.js"></script> -->
+    <script src ="src\menuData.service.js"></script>
+
+</body>
+</html>

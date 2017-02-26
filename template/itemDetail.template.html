@@ -1,0 +1,20 @@
+
+<div class="container">
+  <h6> <a ui-sref="categories"> Menu categories </a></h6>
+     <br/>
+      <h4> Total of {{itemCtrl.MenuItemsByCat.length}} items shown for category selected {{itemCtrl.MenuCategoryName}} </h4>
+     <br/>
+     <br/>
+   <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description </th>
+          </tr>
+        </thead>
+        <tr ng-repeat="items in itemCtrl.MenuItemsByCat">
+          <td> {{items.name}} </td>
+         <td> {{items.description}} </td>
+        </tr>
+  </table>
+</div>
